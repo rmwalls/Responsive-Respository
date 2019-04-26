@@ -8,7 +8,7 @@
    margin: 0 auto;
 }
 
-/* code for nav buttons */
+/* code for nav buttons. position is static by default */
 .topnav {
    overflow: hidden;
    border: 4px solid #cccccc;
@@ -163,18 +163,24 @@ div.pix img {
  }
 
  /* media queries */
- /* Smallish devices 640px and up) */
-@media only screen and (min-width: 64px) {
-   img {
-      height: auto;
-      max-width: 100%; /* make images adapt?? */
-   }
+ /* Smallish devices 640px and below) */
+@media only screen and (max-width: 640px) {
+      img {
+         height: auto;
+         max-width: 100%; /* make images adapt?? */
+      }      
    } 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+      .container {
+         width: 100%;
+      }     
    } 
 
 /* Large devices (laptops/desktops, 980px and up) */
 @media only screen and (min-width: 980px) {
+      .fam {
+         border: 6px solid darkgreen;
+      }
    } 

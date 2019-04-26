@@ -1,11 +1,12 @@
-<!-- Homework for 4/27/19 Portfolio 
- -->
+<!-- Updated for Homework for 4/27/19. Added media query support and animated css 
+DONE-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
         <title>Contact Robbi Walls</title>
     </head>
     <body>
@@ -29,24 +30,27 @@
                     <dd><a href="https://www.linkedin.com/in/robbi-walls-pmp-pba/">https://www.linkedin.com/in/robbi-walls-pmp-pba/</a></dd>
                 </dl>
             </main>
+
+            <!-- animated css -->
+            <div id="animated_div">Twist!</div>
+
             <div>
-                    <!-- Adding this form because it's in the homework assignment. It won't work without a server -->
-                    <form action="/action_page.php">
-                      <label for="fname">Name</label>
-                      <input type="text" id="fname" name="fullname" placeholder="Your full name..">
-                  
-                      <label for="email">Email Address</label>
-                      <input type="text" id="email" name="emailaddress" placeholder="Email address..">
-                  
-                      <label for="comment">Message</label>
-                      <input type="text" id="comment" name="comment" placeholder="Enter message..">
-    
-            
-                        <!-- Submit button -->
-                      <input type="submit" value="Don't Submit">
-                    </form>
-                  </div>
+                <!-- Adding this form because it's in the homework assignment. It won't work without a server -->
+                <form action="/action_page.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Your full name..">
+                
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="emailaddress" placeholder="Email address..">
+                
+                    <label for="comment">Message</label>
+                    <input type="text" id="comment" name="comment" placeholder="Enter message..">
+
         
+                    <!-- Submit button -->
+                    <input type="submit" value="Don't Submit">
+                </form>
+            </div>
         </div>
     </body>
 </html>
